@@ -1,13 +1,7 @@
-//import react into the bundle
 import React from "react";
 import ReactDOM from "react-dom";
-import PropTypes from "prop-types";
-//include bootstrap npm library into the bundle
 import "bootstrap";
-import "./icons.js";
-//include your index.scss file into the bundle
 import "../styles/index.scss";
-
 function SCounter(props) {
 	return (
 		<div className="Bcounter">
@@ -21,12 +15,6 @@ function SCounter(props) {
 		</div>
 	);
 }
-SCounter.propTypes = {
-	cuatro: propTypes.number,
-	tres: propTypes.number,
-	dos: propTypes.number,
-	uno: propTypes.number
-};
 let counter = 0;
 setInterval(function() {
 	const cuatro = Math.floor(counter / 1000);
@@ -39,5 +27,3 @@ setInterval(function() {
 	);
 	counter++;
 }, 1000);
-//import your own components
-import { Home } from "./component/home.js";
